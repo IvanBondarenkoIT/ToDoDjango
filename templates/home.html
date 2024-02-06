@@ -49,6 +49,7 @@
                     <div class="card m-1">
                         <div class="card-body">
                             {{ completed_task.task }}
+                            <a href="{% url 'mark_as_undone' completed_task.pk %}" class="btn btn-warning"><i class="fa fa-times"></i> Mark as Undone</a>
                         </div>
                     </div>
                 {% endfor %}
