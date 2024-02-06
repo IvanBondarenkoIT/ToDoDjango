@@ -33,4 +33,4 @@ def edit_task(request, pk):
         return redirect("home")
     else:
         context = {"task": task}
-    return render(request, "edit_task.html", context=context)
+        return render(request, "edit_task.html", context=context)
